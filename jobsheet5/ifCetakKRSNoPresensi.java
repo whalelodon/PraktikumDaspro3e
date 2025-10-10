@@ -6,13 +6,9 @@ import java.util.Scanner;
             System.out.println("Apakah UKT sudah lunas? (true/false): ");
             boolean uktlunas = sc.nextBoolean();
 
-            if(uktlunas){
-                System.out.println("Pembayaran UKT Tervertifikasi");
-                System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");
-            }else{
-                System.out.println("ANDA BELUM MELAKUKAN PEMBAYARAN");
-                System.out.println("HUBUNGI DONATUR ANDA");
+            String pesan = (uktlunas) ? "Pembayaran UKT TERVERTIFIKASI. SILAHKAN CETAK KRS DAN MINTA TANDA TANGAN DPA." : "ANDA BELUM MELAKUKAN PEMBAYARAN. HUBUNGI DONATUR ANDA";
+                System.out.println("INI ADALAH JAWABAN YANG ANDA CARI" + pesan);
             sc.close();
             }
         }
-    }
+    
